@@ -1,0 +1,11 @@
+Testing specific test 
+cases --- yes that break in line is inserted intentionally
+
+
+**NOTE: above will test if i can find "test \ncases"
+
+
+
+(1) ssss SSSS - will test if ssss returns 2 and test if substr() accounts for upper and lower case
+
+(2) \t vs " "  -- between the two quotes I entered tab

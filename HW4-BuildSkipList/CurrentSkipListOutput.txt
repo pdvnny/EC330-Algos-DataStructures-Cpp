@@ -1,0 +1,119 @@
+Random number was 1116 and rand_int was 0
+
+Added node to 0 levels
+
+Random number was 15749 and rand_int was 1
+
+Random number was 18174 and rand_int was 0
+
+Added node to 1 levels
+
+Random number was 13474 and rand_int was 0
+
+Added node to 0 levels
+
+Random number was 4792 and rand_int was 0
+
+Added node to 0 levels
+
+Random number was 29666 and rand_int was 0
+
+Added node to 0 levels
+
+Random number was 19666 and rand_int was 0
+
+Added node to 0 levels
+
+Random number was 16557 and rand_int was 1
+
+Random number was 19787 and rand_int was 1
+
+Random number was 598 and rand_int was 0
+
+Added node to 2 levels
+
+Search found a node with this data already.
+
+SkipList data:
+
+SkipList Level 0:
+-2147483648
+2147483647
+
+SkipList Level -1:
+-2147483648
+3
+2147483647
+
+SkipList Level -2:
+-2147483648
+1
+3
+2147483647
+
+SkipList Level -3:
+-2147483648
+1
+2
+3
+5
+6
+7
+9
+2147483647
+
+SkipList entire content:
+SkipList Level 0:
+ * -2147483648: [addr: 0x1006380 next: 0x10064a0 prev: 0 up: 0 down: 0x1001c90]
+ * 2147483647: [addr: 0x10064a0 next: 0 prev: 0x1006380 up: 0 down: 0x1001cc0]
+SkipList Level -1:
+ * -2147483648: [addr: 0x1001c90 next: 0x1006100 prev: 0 up: 0x1006380 down: 0x1001bb0]
+ * 3: [addr: 0x1006100 next: 0x1001cc0 prev: 0x1001c90 up: 0 down: 0x10060d0]
+ * 2147483647: [addr: 0x1001cc0 next: 0 prev: 0x1006100 up: 0x10064a0 down: 0x1001be0]
+SkipList Level -2:
+ * -2147483648: [addr: 0x1001bb0 next: 0x1001c40 prev: 0 up: 0x1001c90 down: 0x1001b00]
+ * 1: [addr: 0x1001c40 next: 0x10060d0 prev: 0x1001bb0 up: 0 down: 0x1001c10]
+ * 3: [addr: 0x10060d0 next: 0x1001be0 prev: 0x1001c40 up: 0x1006100 down: 0x10060a0]
+ * 2147483647: [addr: 0x1001be0 next: 0 prev: 0x10060d0 up: 0x1001cc0 down: 0x1001b30]
+SkipList Level -3:
+ * -2147483648: [addr: 0x1001b00 next: 0x1001c10 prev: 0 up: 0x1001bb0 down: 0]
+ * 1: [addr: 0x1001c10 next: 0x1001b60 prev: 0x1001b00 up: 0x1001c40 down: 0]
+ * 2: [addr: 0x1001b60 next: 0x10060a0 prev: 0x1001c10 up: 0 down: 0]
+ * 3: [addr: 0x10060a0 next: 0x1006010 prev: 0x1001b60 up: 0x10060d0 down: 0]
+ * 5: [addr: 0x1006010 next: 0x1006070 prev: 0x10060a0 up: 0 down: 0]
+ * 6: [addr: 0x1006070 next: 0x1005fe0 prev: 0x1006010 up: 0 down: 0]
+ * 7: [addr: 0x1005fe0 next: 0x1006040 prev: 0x1006070 up: 0 down: 0]
+ * 9: [addr: 0x1006040 next: 0x1001b30 prev: 0x1005fe0 up: 0 down: 0]
+ * 2147483647: [addr: 0x1001b30 next: 0 prev: 0x1006040 up: 0x1001be0 down: 0]
+
+
+LinkedList Level 0 deleted. Here are the keys:
+Deleting node with key -2147483648
+Deleting node with key 1
+Deleting node with key 2
+Deleting node with key 3
+Deleting node with key 5
+Deleting node with key 6
+Deleting node with key 7
+Deleting node with key 9
+Deleting final node with key: 2147483647
+
+
+LinkedList Level 1 deleted. Here are the keys:
+Deleting node with key -2147483648
+Deleting node with key 1
+Deleting node with key 3
+Deleting final node with key: 2147483647
+
+
+LinkedList Level 2 deleted. Here are the keys:
+Deleting node with key -2147483648
+Deleting node with key 3
+Deleting final node with key: 2147483647
+
+
+LinkedList Level 3 deleted. Here are the keys:
+Deleting node with key -2147483648
+Deleting final node with key: 2147483647
+
+Process finished with exit code 0

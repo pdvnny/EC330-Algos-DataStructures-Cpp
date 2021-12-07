@@ -1,0 +1,36 @@
+Name: Parker Dunn (No collaborator)
+BU ID Used for Problem 4: U67368938
+
+main.cpp output with BigData.txt
+Longest Word Length: 124
+Valid Passwords: 18250735
+Number of valid dictionary words: 460871881
+
+Explanation:
+
+(a) The function "fourA" determines the longest "word" in a file by tracking
+    the number of characters that occur between white space characters. The
+    function basically has two states: (1) currently at a whitespace character
+    or (2) counting the number of characters found before the next one.
+    Once a whitespace character is found the function determines if the current
+    length is greater than the saved length for a word.
+
+(b) Similar to "fourA", "fourB" only considers sets of characters separated
+    by a whitespace and has two states also: (1) currently at a whitespace
+    character or (2) tracking features of a "word" between whitespace characters.
+    The function tracks the validity of a password on while building (adding
+    characters) to the password, then determines at the next whitespace if the
+    password should be counted.
+
+(c) "fourC" starts by using the dictionary.txt file to generate a hash map of
+    the valid words in the dictionary that I need to find. The function accounts
+    for the combination of characters that cannot be in a word (given my BU ID)
+    in the process of creating the dictionary, so any words that "are not allowed"
+    are not in the dictionary after reading from the text file. Once the hash
+    map dictionary is created, the function loops through characters of the file
+    and checks for valid words starting at each character once and checking
+    for valid dictionary words until the maximum length of a dictionary word
+    is reached or a non-alphabetical character is reached. (This prevents the
+    function from unnecessarily checking strings and restricts, in a positive way,
+    how many substrings must be checked from some characters in BigData.txt or
+    TinyData.txt.)
