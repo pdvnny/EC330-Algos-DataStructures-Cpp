@@ -26,7 +26,7 @@ private:
 public:
     explicit BinaryTree(string);
     BinaryTree(string, int);
-    BinaryTree(const BinaryTree &BT);
+//    BinaryTree(const BinaryTree &BT);
     ~BinaryTree();
 //    BTNode* root;
     [[nodiscard]] string getKey() const;
@@ -55,6 +55,22 @@ public:
     }
 };
 
+class myComparatorNew {
+public:
+    int operator() (const BinaryTree* root1, const BinaryTree* root2) {
+        if (root1->getFreq() == root2->getFreq()) {
+            return root1->getKey().size() > root2->getKey().size();
+//            if (root1->getKey().size() == root2->getKey().size())
+//                return root1->getKey().at(0) > root2->getKey().at(0);
+//            else
+//                return root1->getKey().size() > root2->getKey().size();
+//                return root1->getKey().size() < root2->getKey().size();
+        } else {
+            return root1->getFreq() > root2->getFreq();
+        }
+    }
+};
+
 class Huffman {
 private:
     BinaryTree* huffTree;
@@ -62,11 +78,13 @@ private:
 public:
     Huffman();
     ~Huffman();
-    priority_queue<character, vector<character>, myComparator> min_heap;
+//    priority_queue<character, vector<character>, myComparator> min_heap;
+    priority_queue<BinaryTree*, vector<BinaryTree*>, myComparatorNew> min_heap;
     vector<BinaryTree*> nodes;
     vector<string> code_chars;
     void buildHuffmanTree(char [], int [], int);
     void printCodes();
+    bool inCodes(string);
     void genCodes(BinaryTree*, string);
     void decodeText(string);
 };

@@ -12,8 +12,9 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    char characters[] = {'e', 'l', 'o', 'g'};
-    int freq[] = {1, 1, 2, 3};
+    char characters[] = {'b', 'p', 'r', 'o', 'k', 'e'};
+	int freq[] = {1, 1, 1, 2, 2, 3};
+
     int size = sizeof(characters) / sizeof(characters[0]);
     
     Huffman huffman;
@@ -23,7 +24,7 @@ int main(int argc, const char * argv[]) {
     
     if (argc != 2)
         cout << "Please supply a file name with Huffman encoded text\n";
-//    huffman.decodeText(argv[1]);
+    huffman.decodeText(argv[1]);
     
     return 0;
 }
